@@ -70,16 +70,16 @@ class SortingAlgorithms:
 		return sorted(data, key=itemgetter(index))
 
 	@staticmethod
-	def LISTOFTUPLES(arr, index=None):
+    def LISTOFTUPLES(arr, index=None):
 		""""Algorithm to sort a list of tuples"""
 		if index is None:
 			return sorted(data)
 		return sorted(data, key=itemgetter(index))
 		
-    @staticmethod
-    def APPLYSORT(arr, func):
+	@staticmethod
+	def APPLYSORT(arr, func):
     	"""Algorithm to sort a list if func is applied to the elements of the list"""
-    	return sorted(arr, key=func)
+		return sorted(arr, key=func)
  
 
 
