@@ -1,1 +1,1 @@
-from .core import bubblesort, insertionsort, mergesort
+from .core.SortingAlgorithms import bubblesort, insertionsort, mergesort
