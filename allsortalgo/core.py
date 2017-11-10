@@ -3,7 +3,6 @@ from operator import itemgetter
 
 class SortingAlgorithms:
     def __init__(self):
-        return
 
     @staticmethod
     def BUBBLE(arr):
