@@ -2,8 +2,6 @@ from operator import itemgetter
 
 
 class SortingAlgorithms:
-    def __init__(self):
-
     @staticmethod
     def BUBBLE(arr):
         """Bubble sort algorithm for a python list """
@@ -39,8 +37,8 @@ class SortingAlgorithms:
             mid = len(data)/2
             left = data[:mid]
             right = data[mid:]
-            MERGE(left)
-            MERGE(right)
+            SortingAlgorithms.MERGE(left)
+            SortingAlgorithms.MERGE(right)
             i = 0
             j = 0
             k = 0
