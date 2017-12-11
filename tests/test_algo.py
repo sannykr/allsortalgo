@@ -1,5 +1,5 @@
 import pytest
-from allsortalgo import *
+from allsortalgo.core import SortingAlgorithms
 
 
 data = [6,8,3]
