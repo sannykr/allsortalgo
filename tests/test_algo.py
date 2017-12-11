@@ -15,4 +15,4 @@ def test_merge():
 # def test_quick():
 #     assert SortingAlgorithms.QUICK(data) == [3,6,8] 
 
-# def test_              
+# def test_             
