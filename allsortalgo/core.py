@@ -34,7 +34,7 @@ class SortingAlgorithms:
         """merge sort algorithm for a python list """
         data = arr
         if len(data) > 1:
-            mid = len(data)/2
+            mid = len(data)//2
             left = data[:mid]
             right = data[mid:]
             SortingAlgorithms.MERGE(left)
