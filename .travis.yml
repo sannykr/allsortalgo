@@ -6,6 +6,8 @@ python:
   - "3.3"
   - "3.6"
 # command to install dependencies
+install:
+  - pip install pytest
 script: pytest
 branches:
   only:
