@@ -1,4 +1,5 @@
 from operator import itemgetter
+from .helpers import * 
 
 
 class SortingAlgorithms:
@@ -63,6 +64,7 @@ class SortingAlgorithms:
     @staticmethod
     def LISTOFLISTS(arr, index=None):
         """Algorithm to sort a list of lists"""
+        data = arr
         if index is None:
             return sorted(data)
         return sorted(data, key=itemgetter(index))
@@ -70,27 +72,49 @@ class SortingAlgorithms:
     @staticmethod
     def LISTOFTUPLES(arr, index=None):
         """"Algorithm to sort a list of tuples"""
+        data = arr
         if index is None:
-            return sorted(arr)
-        return sorted(arr, key=itemgetter(index))
+            return sorted(data)
+        return sorted(data, key=itemgetter(index))
 
     @staticmethod
     def APPLYSORT(arr, func):
         """Algorithm to sort a list if func is applied to the elements of the list"""
-        return sorted(arr, key=func)
+        data = arr
+        return sorted(data, key=func)
 
     @staticmethod
-    def selectionsort(arr):
+    def SELECTIONSORT(arr):
         """selection sort algorithm for a python list"""
-        return
+        data = arr
+        for i in range(len(data)):   
+            min_idx = i
+            for j in range(i+1, len(data)):
+                if data[min_idx] > data[j]:
+                    min_idx = j
+                  
+            data[i], data[min_idx] = data[min_idx], data[i]
+        return data
 
     @staticmethod
-    def quicksort(arr):
+    def QUICKSORT(arr, low, high):
         """selection sort algorithn for a python list
         """
-        return
+        data = arr
+        if low < high:
+            pi = partition(data,low,high)
+            SortingAlgorithms.QUICKSORT(data, low, pi-1)
+            SortingAlgorithms.QUICKSORT(data, pi+1, high)
+        return data
 
     @staticmethod
-    def heapsort(data):
+    def HEAPSORT(arr):
         """heapsort implementation for a python list"""
-        return
+        data = arr
+        n = len(data)
+        for i in range(n, -1, -1):
+            heapify(data, n, i)
+        for i in range(n-1, 0, -1):
+            data[i], data[0] = data[0], data[i]
+            heapify(data, i, 0)
+        return data
