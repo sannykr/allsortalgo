@@ -1,3 +1,5 @@
+https://travis-ci.org/sannykr/allsortalgo.svg?branch=master
+
 Sorting Algorithms
 ========================
 
