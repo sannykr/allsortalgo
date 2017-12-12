@@ -1,4 +1,4 @@
-https://travis-ci.org/sannykr/allsortalgo.svg?branch=master
+[![Build Status](https://travis-ci.org/sannykr/allsortalgo.svg?branch=master)](https://travis-ci.org/sannykr/allsortalgo)
 
 Sorting Algorithms
 ========================
