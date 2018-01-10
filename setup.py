@@ -12,7 +12,7 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3.6',
     'Topic :: Scientific/Engineering']
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
